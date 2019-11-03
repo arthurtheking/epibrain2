@@ -1,0 +1,26 @@
+{
+  "name": "brain2",
+  "version": "1.0.0",
+  "description": "\"# epibrain2\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/index.html --open",
+    "build": "parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurtheking/epibrain2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arthurtheking/epibrain2/issues"
+  },
+  "homepage": "https://github.com/arthurtheking/epibrain2#readme",
+  "dependencies": {
+    "sass": "^1.23.3"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
