@@ -1,0 +1,57 @@
+@import './reset.scss';
+@import 'node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
+@import './fonts.scss';
+
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 30px;
+    height: 3px;
+}
+.swiped {
+    left: 20px !important;
+}
+
+.hamburger-inner {
+    transform: translate(-13px, -10px);
+    transition-duration: 1s;
+}
+
+.hamburger:active {
+    outline: none;
+}
+
+.swiper-container {
+    width: 70%;
+    height: 650px;
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 0px 22px -16px rgba(0,0,0,0.75);
+    margin-bottom: 30px;
+}
+
+.swiper-slide {
+    display: flex;
+    height: 100%;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 35px;
+    color: #7a00aa;
+};
+
+.swiper-button-next, .swiper-button-prev {
+    color: #7a00aa;
+}
+
+.swiper-pagination-bullet-active {
+    background: #7a00aa;
+}
+
+
+@import './components/header.scss';
+@import './components/masters.scss';
+@import './components/advantages.scss';
+@import './components/services.scss';
+@import './components/contacts.scss';
+@import './components/footer.scss';

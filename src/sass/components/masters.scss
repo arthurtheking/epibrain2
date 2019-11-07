@@ -1,0 +1,358 @@
+// section masters
+
+.masters {
+    position: relative;
+    padding: 30px 45px 20px;
+    text-align: center;
+    background-position: 100% 100%;
+}
+
+.master__top {
+    padding-bottom: 60px;
+}
+
+.masters__title {
+    position: relative;
+    font-size: 30px;
+    font-family: 'Montserrat-Light', sans-serif;
+    text-transform: uppercase;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    padding-top: 40px; 
+    margin-bottom: 40px;
+    color: #7a00aa;
+}
+
+.masters__title::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+    left: calc(50% - 20px);
+    bottom: 0;
+    background-color: #7a00aa;
+}
+
+.masters__img {
+    width: 400px;
+    min-width: 400px;
+    height: 550px;
+    background: url(../images/kharchuk_spec.jpg) no-repeat -150px center;
+    background-size: cover;
+    margin: 20px 70px 20px 50px;
+    border-radius: 10px;
+    box-shadow: 8px 0px 28px -16px rgba(0,0,0,0.75);
+}
+
+.swiper-slide:nth-child(2) > .masters__img {
+    background: url(../images/dubinina_spec.jpg) no-repeat -120px center;
+    background-size: cover;
+}
+
+.swiper-slide:nth-child(3) > .masters__img {
+    background: url(../images/reinghardt_spec.jpg) no-repeat -270px center;
+    background-size: cover;
+}
+
+.swiper-slide:nth-child(4) > .masters__img {
+    background: url(../images/lissova-luparenko_spec.jpg) no-repeat -170px center;
+    background-size: cover;
+}
+
+.masters__img__info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.masters__subtitle {
+    position: relative;
+    font-size: 22px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: 400;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    color: #7a00aa;
+    text-align: center;
+}
+
+.masters__subtitle::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+    left: calc(50% - 20px);
+    bottom: 0;
+    background-color: #7a00aa;
+}
+
+.masters__list {
+    width: 100%;
+    font-size: 20px;
+    list-style: disc;
+    text-align: left;
+    padding-left: 150px;
+    font-family: 'Montserrat-Light', sans-serif;
+    padding-bottom: 150px;
+}
+
+.masters__list__item {
+    margin-bottom: 10px;
+}
+
+.masters__description {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat-Light', sans-serif;
+    font-size: 18px;
+}
+
+@media all and (min-width: 320px) and (max-width: 768px) {
+
+    // masters
+
+    .masters {
+        padding: 0;
+    }
+
+    .swiper-container {
+        width: 95%;
+        height: 95vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .masters__title {
+        font-size: 24px;
+        width: auto;
+    }
+
+    .swiper-slide {
+        flex-direction: column;
+    }
+
+    .masters__img {
+        min-width: unset;
+        margin: 10px;
+        width: 90%;
+        margin: 20px auto;
+        min-width: none;
+        background-position: center center;
+        height: 60%;
+    }
+
+    .swiper-slide:nth-child(n+2) > .masters__img__info {
+        margin-top: auto;
+    }
+
+    .masters__img__info {
+        height: 40%;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .masters__subtitle {
+        margin: 0px 0 30px 0;
+        font-size: 16px;
+        padding: 0;
+        width: 80%;
+
+    }
+
+    .masters__subtitle::after {
+        bottom: -10px;
+    }
+
+    .masters__list {
+        font-size: 12px;
+        font-family: 'Montserrat-Regular';
+        padding-bottom: 20px;
+        padding-left: 30%;
+    }
+
+    .masters__description {
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .swiper-pagination-bullets {
+        display: none;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        top: 400px;
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 992px) {
+    .swiper-container {
+        width: 95%;
+        // height: 95vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiper-slide {
+        flex-direction: column;
+    }
+
+    .masters__img {
+        min-width: unset;
+        margin: 10px;
+        width: 90%;
+        margin: 20px auto;
+        min-width: none;
+        background-position: center center;
+    }
+
+    .masters__img__info {
+        height: 40%;
+        width: 100%;
+    }
+
+    .masters__subtitle {
+        margin: 0px 0 30px 0;
+        font-size: 18px;
+        padding: 0;
+        width: 80%;
+
+    }
+
+    .masters__subtitle::after {
+        bottom: -10px;
+    }
+
+    .masters__list {
+        font-size: 14px;
+        font-family: 'Montserrat-Regular';
+        padding-bottom: 20px;
+        padding-left: 30%;
+    }
+
+    .masters__description {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .swiper-pagination-bullets {
+        display: none;
+    }
+
+    .masters__title {
+        font-size: 26px;
+        width: auto;
+    }
+}
+
+@media all and (min-width: 993px) and (max-width: 1100px) {
+    .swiper-container {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiper-slide {
+        flex-direction: row;
+    }
+
+    .masters__img {
+        min-width: unset;
+        margin: 10px;
+        width: 90%;
+        margin: 20px 20px 20px 50px;
+        min-width: none;
+        background-position: center center;
+    }
+
+    .masters__img__info {
+        height: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .masters__subtitle {
+        margin: 20px 0 30px 0;
+        font-size: 20px;
+        padding: 0;
+        width: 80%;
+    }
+
+    .masters__title {
+        font-size: 28px;
+        width: auto;
+    }
+
+    .masters__subtitle::after {
+        bottom: -10px;
+    }
+
+    .masters__list {
+        font-size: 16px;
+        font-family: 'Montserrat-Regular';
+        padding-bottom: 20px;
+    }
+
+    .masters__description {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .swiper-pagination-bullets {
+        display: block;
+    }
+
+}
+
+@media all and (min-width: 1101px) and (max-width: 1366px) {
+    .swiper-container {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .masters__list {
+        padding-left: 30px;
+    }
+
+    .masters__description {
+        margin-left: 0;
+    }
+}
+
+@media all and (min-width: 1367px) {
+    .swiper-container {
+        width: 95%;
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .masters__list {
+        padding-left: 250px;
+    }
+
+    .masters__description {
+        margin-left: 70px;
+    }
+}

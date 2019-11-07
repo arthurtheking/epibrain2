@@ -1,1 +1,0 @@
-{"version":3,"sources":["sass\\styles.scss"],"names":[],"mappings":"AAAA,OACI,aAAA,CACA,WAAA,CACA,YAAA,CACA","file":"js.7d59dbc1.css","sourceRoot":"..\\src","sourcesContent":[".block {\r\n    display: block;\r\n    width: 100px;\r\n    height: 100px;\r\n    background-color: #000;\r\n}"]}

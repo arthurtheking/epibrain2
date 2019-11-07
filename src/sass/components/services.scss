@@ -1,0 +1,282 @@
+.services__section {
+    position: relative;
+    padding: 30px 45px 20px;
+    text-align: center;
+    background-position: 100% 100%;
+    border-top: 1px solid #424242;
+}
+
+.services__title {
+    position: relative;
+    font-size: 30px;
+    font-family: 'Montserrat-Light', sans-serif;
+    text-transform: uppercase;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    padding-top: 40px; 
+    margin-bottom: 40px;
+    color: #7a00aa;
+}
+
+.services__title::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+    left: calc(50% - 20px);
+    bottom: 0;
+    background-color: #7a00aa;
+}
+
+.first {
+    background: linear-gradient(rgba(252, 241, 255, .4),rgba(252, 241, 255, .4)), url(../images/welcome.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.second {
+    background: linear-gradient(rgba(252, 241, 255, .4),rgba(252, 241, 255, .4)), url(../images/eeg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.second > article {
+    margin-left: 0;
+    box-shadow: 12px 0px 22px -16px rgba(0, 0, 0, 0.75);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+}
+
+.third {
+    background: linear-gradient(rgba(252, 241, 255, .4),rgba(252, 241, 255, .4)), url(../images/plant.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.third > article {
+    box-shadow: -12px 0px 22px -16px rgba(0, 0, 0, 0.75);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.forth {
+    background: linear-gradient(rgba(252, 241, 255, .4),rgba(252, 241, 255, .4)), url(../images/pc.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 3% 0;
+}
+
+.services__slider {
+    border: 1px solid #cdcdcd;
+    box-shadow: 0px 0px 22px -16px rgba(0,0,0,0.75);
+}
+
+.services__img__info, .forth {
+    position: relative;
+    width: 40%;
+    height: 90%;
+    background-color: #fff;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: right;
+    box-shadow: -12px 0px 22px -16px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    border: 1px solid #cdcdcd;
+}
+
+.services__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60%;
+    text-align: right;
+    list-style: disc;
+    width: 80%;
+}
+
+.services__list__item {
+    font-family: 'Montserrat-Light';
+    font-size: 16px;
+    width: 80%;
+    margin-left: auto;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.list__item__title {
+    font-family: 'Montserrat-Medium';
+    text-align: left;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+
+.services__subtitle {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Montserrat-Light', sans-serif;
+    font-weight: 600;
+    color: #7a00aa;
+}
+
+.services__subtitle::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+    left: calc(50% - 20px);
+    bottom: -10px;
+    background-color: #7a00aa;
+}
+
+.services--bottom > .swiper-container > .swiper-button-prev, .services--bottom > .swiper-container > .swiper-button-next {
+    top: 300px;
+}
+
+
+@media all and (min-width: 320px) and (max-width: 768px) {
+
+
+    .services__section {
+        padding: 0;
+    }
+
+    .swiper-container {
+        height: 600px;
+    }
+
+    .services__subtitle {
+        font-size: 14px;
+    }
+
+    .services__list__item {
+        font-size: 12px;
+    }
+
+    .services__img__info {
+        width: 100%;
+        box-shadow: none;
+    }
+    
+    .first > .services__img__info,
+    .second > .services__img__info,
+    .third > .services__img__info,
+    .forth > .services__img__info {
+        height: 100%;
+        box-shadow: none;
+        border-radius: 0px !important;
+    }
+
+    .forth {
+        height: 100%;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .services__list {
+        width: 70%;
+        height: auto;
+    }
+
+    .services__list__item {
+        width: 100%;
+    }
+
+    .services__title {
+        font-size: 24px;
+    }
+
+    .services--bottom > .swiper-container {
+        height: 500px;
+    }
+
+    .services--bottom > .swiper-container > .swiper-button-next,
+    .services--bottom > .swiper-container > .swiper-button-prev {
+        top: 250px;
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 992px) {
+
+    
+    .services__title {
+        font-size: 26px;
+        width: auto;
+    }
+
+    .services__subtitle {
+        font-size: 16px;
+    }
+
+    .services__list__item {
+        font-size: 14px;
+    }
+
+    .services__img__info {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .services__list__item {
+        width: 100%;
+    }
+
+    .services--bottom > .swiper-container {
+        height: 500px;
+    }
+
+    .second > .services__img__info {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .first > .services__img__info,
+    .second > .services__img__info,
+    .third > .services__img__info,
+    .forth > .services__img__info {
+        // height: 100%;
+        box-shadow: none;
+        border-radius: 10px !important;
+    }
+
+    .forth {
+        box-shadow: none;
+        height: 100%;    
+        padding-top: 0;
+    }
+}
+
+@media all and (min-width: 993px) and (max-width: 1100px) {
+
+    .services__title {
+        font-size: 28px;
+        width: auto;
+    }
+
+    .services__img__info {
+        width: 50%;    
+    }
+
+    .services__subtitle {
+        font-size: 16px;
+    }
+
+    .services__list__item {
+        font-size: 14px;
+    }
+}
