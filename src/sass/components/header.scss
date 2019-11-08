@@ -122,7 +122,8 @@
 
     .header__welcome__message {
         font-size: 24px;
-        width: 200px;
+        width: auto;
+        max-width: 225px;
     }
 
     .header__adress {
