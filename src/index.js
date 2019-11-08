@@ -8,10 +8,20 @@ const refs = {
     hamburgerBtn: document.querySelector('.hamburger'),
 }
 
-const openMenu = () => {
+const openMenu = e => {
     refs.sidebar.classList.toggle('active');
     refs.hamburgerBtn.classList.toggle('is-active');
-    refs.toogleBtn.classList.toggle('swiped')
+    refs.toogleBtn.classList.toggle('swiped');
+
+    closeMenu(e);
+}
+
+const closeMenu = event => {
+  event.preventDefault();
+
+  if(event.target.nodeName === 'A') {
+    console.log('Hello')
+  }
 }
 
 refs.toogleBtn.addEventListener('click', openMenu);
