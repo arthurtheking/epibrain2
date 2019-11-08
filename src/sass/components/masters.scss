@@ -150,7 +150,7 @@
         margin: 20px auto;
         min-width: none;
         background-position: center center;
-        height: 60%;
+        height: 50%;
     }
 
     .swiper-slide:nth-child(n+2) > .masters__img__info {
@@ -176,14 +176,14 @@
     }
 
     .masters__list {
-        font-size: 12px;
+        font-size: 14px;
         font-family: 'Montserrat-Regular';
         padding-bottom: 20px;
         padding-left: 30%;
     }
 
     .masters__description {
-        font-size: 12px;
+        font-size: 14px;
         margin: 0;
         padding: 0;
         text-align: center;
@@ -202,7 +202,6 @@
 @media all and (min-width: 769px) and (max-width: 992px) {
     .swiper-container {
         width: 95%;
-        // height: 95vh;
         margin-left: auto;
         margin-right: auto;
     }
@@ -221,7 +220,7 @@
     }
 
     .masters__img__info {
-        height: 40%;
+        height: 50%;
         width: 100%;
     }
 
@@ -238,7 +237,7 @@
     }
 
     .masters__list {
-        font-size: 14px;
+        font-size: 16px;
         font-family: 'Montserrat-Regular';
         padding-bottom: 20px;
         padding-left: 30%;
