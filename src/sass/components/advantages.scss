@@ -137,11 +137,11 @@
     }
 
     .advantages__subtitle {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .advantages__text {
-        font-size: 12px;
+        font-size: 14px;
         width: auto;
         max-width: 300px;
     }
@@ -180,7 +180,9 @@
 @media all and (min-width: 1101px) and (max-width: 1366px) {
 
     .advantages__item {
-        width: 23%;
+        width: 30%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .advantages__text {
