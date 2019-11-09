@@ -88,40 +88,36 @@
 }
 
 .experience__img {
-    background: url(/src/icons/002-goal.svg) no-repeat center center, #dcacd6;
+    background: url(/src/svg/002-goal.svg) no-repeat center center, #dcacd6;
     background-size: 80px;
 }
 
 .license__img {
-    background: url(/src/icons/003-copywriting.svg) no-repeat center center, #dcacd6;
+    background: url(/src/svg/003-copywriting.svg) no-repeat center center, #dcacd6;
     background-size: 80px;
 }
 
 .doctor__img {
-    background: url(/src/icons/005-doctor.svg) no-repeat center center, #dcacd6;
+    background: url(/src/svg/005-doctor.svg) no-repeat center center, #dcacd6;
     background-size: 80px;
 }
 
 .confidential__img {
-    background: url(/src/icons/001-shield.svg) no-repeat center center, #dcacd6;
+    background: url(/src/svg/001-shield.svg) no-repeat center center, #dcacd6;
     background-size: 80px;
 }
 
 .client__img {
-    background: url(/src/icons/004-review.svg) no-repeat center center, #dcacd6;
+    background: url(/src/svg/004-review.svg) no-repeat center center, #dcacd6;
     background-size: 80px;
 }
 
 .equip__img {
-    background: url(/src/icons/006-man.svg) no-repeat center center, #dcacd6;
+    background: url(/src/svg/006-man.svg) no-repeat center center, #dcacd6;
     background-size: 80px;
 }
 
 @media all and (min-width: 320px) and (max-width: 768px) {
-
-
-
-    // advantages
 
     .advantages__title {
         font-size: 24px;
