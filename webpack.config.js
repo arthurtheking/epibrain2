@@ -28,6 +28,10 @@ module.exports = ({ mode = 'production' }) =>
             use: 'html-loader'
           },
           {
+            test: /\.svg$/,
+            loader: 'svg-inline-loader'
+          },
+          {
             test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
             use: [
               {
