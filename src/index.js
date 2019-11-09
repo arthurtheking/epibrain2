@@ -1,7 +1,5 @@
 import './sass/main.scss';
 
-import Swiper from 'swiper';
-
 const refs = {
     toogleBtn: document.querySelector('.toggle__btn'),
     sidebar: document.querySelector('.header__sidebar'),
