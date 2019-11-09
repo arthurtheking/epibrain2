@@ -121,7 +121,29 @@
 
 @media all and (min-width: 320px) and (max-width: 768px) {
 
-    // masters
+    .swiper-slide:nth-child(1) > .masters__img {
+        max-width: 400px;
+        background: url(../images/kharchuk_spec.jpg) no-repeat -60px center;
+        background-size: cover;
+    }
+    
+    .swiper-slide:nth-child(2) > .masters__img {
+        max-width: 400px;
+        background: url(../images/dubinina_spec.jpg) no-repeat -60px center;
+        background-size: cover;
+    }
+    
+    .swiper-slide:nth-child(3) > .masters__img {
+        max-width: 400px;
+        background: url(../images/reinghardt_spec.jpg) no-repeat -100px center;
+        background-size: cover;
+    }
+    
+    .swiper-slide:nth-child(4) > .masters__img {
+        max-width: 400px;
+        background: url(../images/lissova-luparenko_spec.jpg) no-repeat -80px center;
+        background-size: cover;
+    }
 
     .masters {
         padding: 0;
@@ -199,12 +221,38 @@
     }
 }
 
+@media all and (min-width: 360px) and (max-width: 768px) {
+    .swiper-slide:nth-child(3) > .masters__img {
+        background: url(../images/reinghardt_spec.jpg) no-repeat center center;
+        background-size: cover;
+    }
+}
+
 @media all and (min-width: 769px) and (max-width: 992px) {
     .swiper-container {
         width: 95%;
-        // height: 95vh;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .swiper-slide:nth-child(1) > .masters__img {
+        background: url(../images/kharchuk_spec.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    
+    .swiper-slide:nth-child(2) > .masters__img {
+        background: url(../images/dubinina_spec.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    
+    .swiper-slide:nth-child(3) > .masters__img {
+        background: url(../images/reinghardt_spec.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    
+    .swiper-slide:nth-child(4) > .masters__img {
+        background: url(../images/lissova-luparenko_spec.jpg) no-repeat center center;
+        background-size: cover;
     }
 
     .swiper-slide {
@@ -267,6 +315,11 @@
         width: 95%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .swiper-slide:nth-child(1) > .masters__img {
+        background: url(../images/kharchuk_spec.jpg) no-repeat -150px center;
+        background-size: cover;
     }
 
     .swiper-slide {
