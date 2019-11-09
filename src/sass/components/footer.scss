@@ -25,10 +25,21 @@
     color: rgb(255, 220, 144);
 }
 
-.copyright > a {
+footer > div > a {
     text-decoration: none;
     text-transform: uppercase;
     color: rgb(255, 220, 144);
+    vertical-align: top;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+footer > div {
+    line-height: 20px;
+}
+
+footer > p {
+    line-height: 20px;
 }
 
 
@@ -37,6 +48,12 @@
 
     .footer {
         flex-direction: column;
+    }
+
+    
+    footer > div {
+    margin-bottom: 10px;
+    line-height: 20px;
     }
 
     .copyright {
@@ -50,10 +67,30 @@
     }
 }
 
+@media all and (min-width: 769px) and (max-width: 1100px) {
+    footer > div {
+        line-height: 20px;
+    }
+
+    footer > div > a {
+        margin-bottom: 10px;
+        line-height: 20px;
+        vertical-align: top;
+        }
+    
+    footer > p {
+        line-height: 20px;
+    }
+}
 
 @media all and (min-width: 1101px) and (max-width: 1366px) {
 
     .footer {
         padding: 20px 10%;
     }
+
+    footer > div > a {
+        margin-bottom: 10px;
+        // line-height: 20px;
+        }
 }

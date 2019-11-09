@@ -6,24 +6,22 @@ const refs = {
     toogleBtn: document.querySelector('.toggle__btn'),
     sidebar: document.querySelector('.header__sidebar'),
     hamburgerBtn: document.querySelector('.hamburger'),
+    list: document.querySelector('.header__sidebar__nav')
 }
 
-const openMenu = e => {
+const openMenu = () => {
     refs.sidebar.classList.toggle('active');
     refs.hamburgerBtn.classList.toggle('is-active');
     refs.toogleBtn.classList.toggle('swiped');
-
-    closeMenu(e);
 }
 
-const closeMenu = event => {
-  event.preventDefault();
-
-  if(event.target.nodeName === 'A') {
-    console.log('Hello')
+const menuClose = (e) => {
+  if(e.target.nodeName === 'A') {
+    openMenu();
   }
 }
 
+refs.list.addEventListener('click', menuClose)
 refs.toogleBtn.addEventListener('click', openMenu);
 
 var mySwiper = new Swiper ('.swiper-container', {
