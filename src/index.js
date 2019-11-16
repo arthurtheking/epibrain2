@@ -41,8 +41,6 @@ const menuClose = (e) => {
 
 const langChangeToRus = e => {
   if(e.target.classList.value === 'flag--ru') {
-      refs.headerTop.innerHTML = '';
-      refs.headerTop.insertAdjacentHTML('afterbegin', `<p class="header__adress"><span><img src="https://image.flaticon.com/icons/png/512/67/67347.png" alt="pin icon"></span> Адрес: ул. Винниченка 14, Медичний центр </p>`);
 
       refs.headerBottom.innerHTML = '';
       refs.headerBottom.insertAdjacentHTML('afterbegin', ` <h2 class="header__title">EpiBrain</h2>
@@ -124,7 +122,7 @@ const langChangeToRus = e => {
       <li class="advantages__item">
           <div class="advantage__img__block client__img"></div><br>
           <span class="advantages__subtitle">Клиенториенторованность</span>
-          <p class="advantages__text">Индивидуальных подход к каждому клиенту – основная философия центра</p>
+          <p class="advantages__text">Индивидуальный подход к каждому клиенту – основная философия центра</p>
       </li>
   </ul>`)
 
@@ -136,7 +134,7 @@ const langChangeToRus = e => {
   <h3 class="services__subtitle">Консультация эпилептолога</h3>
   <ul class="services__list">
       <li class="services__list__item">
-          <h4 class="list__item__title">Первичная консультация  1200 грн</h4>
+          <h4 class="list__item__title">Первичная консультация  1500 грн</h4>
           (включает в себя первичную диагностику нашего эпилептолога – Харчука Сергея Михайловича; при необходимости, назначение дополнительной диагностики у смежных специалистов; первичные подбор медикаментов)
       </li>
       <li class="services__list__item">
@@ -167,8 +165,7 @@ const langChangeToRus = e => {
     <h3 class="services__subtitle">Электроэнцефалография</h3>
     <ul class="services__list">
         <li class="services__list__item">
-            <h4 class="list__item__title">Первичная консультация  1200 грн</h4>
-            ЭЭГ-мониторинг 1000 грн
+            <h4 class="list__item__title">ЭЭГ-мониторинг 1000 грн</h4>
             (Исследование работы головного мозга продолжительностью от 1 часа с последующим заключением врача функциональной диагностики)
         </li>
         <li class="services__list__item">
@@ -205,15 +202,15 @@ refs.forth.insertAdjacentHTML('afterbegin', `<article class="services__img__info
         <li class="contacts__bottom__items">098-092-89-89</li>
     </ul>
     <h5 class="contacts__bottom__subtitle">Адрес:</h5>
-    <p class="contacts__bottom__text">ул. Винниченка 14, <br> Медицинские центр </p>`)
+    <p class="contacts__bottom__text">ул. Винниченка 14, <br> Медицинский центр </p>
+    <h5 class="contacts__bottom__subtitle">График работы:</h5>
+    <p class="contacts__bottom__text">Понедельник – Пятница: 9:00 до 20:00<br>Суббота: 10:00 до 18:00. </p>`)
 
     openMenu();
 }
 
 const langChangeToUkr = e => {
   if(e.target.classList.value === 'flag--ukr') {
-      refs.headerTop.innerHTML = '';
-      refs.headerTop.insertAdjacentHTML('afterbegin', `<p class="header__adress"><span><img src="https://image.flaticon.com/icons/png/512/67/67347.png" alt="pin icon"></span> Адресса: вул. Винниченка 14, Медичний центр </p>`);
 
       refs.headerBottom.innerHTML = '';
       refs.headerBottom.insertAdjacentHTML('afterbegin', ` <h2 class="header__title">EpiBrain</h2>
@@ -307,7 +304,7 @@ const langChangeToUkr = e => {
   <h3 class="services__subtitle">Консультація епілептолога</h3>
   <ul class="services__list">
       <li class="services__list__item">
-          <h4 class="list__item__title">Первинна консультація  1200 грн</h4>
+          <h4 class="list__item__title">Первинна консультація  1500 грн</h4>
           (включає в себе первинну діагностику нашого епілептолога - Харчука Сергія Михайловича; за необхідноств, рекомендація додаткової діагностики у суміжних фахівців; первинне назначення медикаментів)
       </li>
       <li class="services__list__item">
@@ -337,7 +334,7 @@ refs.third.insertAdjacentHTML('afterbegin', `<article class="services__img__info
 <h3 class="services__subtitle">Електроенцефалографія</h3>
 <ul class="services__list">
     <li class="services__list__item">
-        <h4 class="list__item__title">ЕЕГ-моніторінг 1200 грн</h4>
+        <h4 class="list__item__title">ЕЕГ-моніторінг 1000 грн</h4>
         (дослідження роботи головного мозку тривалістю від 1 години з написання висновку  лікаря функціональної діагностики)
         
     </li>
@@ -374,7 +371,9 @@ refs.contactsBottom.insertAdjacentHTML('afterbegin', `<h5 class="contacts__botto
     <li class="contacts__bottom__items">098-092-89-89</li>
 </ul>
 <h5 class="contacts__bottom__subtitle">Адресса:</h5>
-<p class="contacts__bottom__text">вул. Винниченка 14, <br> Медичний центр</p>`)
+<p class="contacts__bottom__text">вул. Винниченка 14, <br> Медичний центр</p>
+<h5 class="contacts__bottom__subtitle">Графік роботи:</h5>
+<p class="contacts__bottom__text">Понеділок – П'ятниця: 9:00 до 20:00<br>Субота: 10:00 до 18:00. </p>`)
 
 openMenu();
   }

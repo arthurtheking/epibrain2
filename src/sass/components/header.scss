@@ -46,6 +46,17 @@
     background-color: #7a00aa;
 }
 
+.inst__link, .face__link {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.inst__link > img, .face__link > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
 .header__sidebar {
     display: flex;
     flex-direction: column;
@@ -86,7 +97,7 @@
     height: 35px;
     border-radius: 5px;
     // background-color: #fff;
-    top: 30px;
+    top: 40px;
     left: -95px;
 }
 

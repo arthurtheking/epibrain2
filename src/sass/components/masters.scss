@@ -135,7 +135,7 @@
     
     .swiper-slide:nth-child(3) > .masters__img {
         max-width: 400px;
-        background: url(../images/reinghardt_spec.jpg) no-repeat -100px center;
+        background: url(../images/borisovna_1.jpg) no-repeat center center;
         background-size: cover;
     }
     
@@ -223,7 +223,7 @@
 
 @media all and (min-width: 360px) and (max-width: 768px) {
     .swiper-slide:nth-child(3) > .masters__img {
-        background: url(../images/reinghardt_spec.jpg) no-repeat center center;
+        background: url(../images/borisovna_1.jpg) no-repeat center -60px;
         background-size: cover;
     }
 }
@@ -246,7 +246,7 @@
     }
     
     .swiper-slide:nth-child(3) > .masters__img {
-        background: url(../images/reinghardt_spec.jpg) no-repeat center center;
+        background: url(../images/pc.jpg) no-repeat center center;
         background-size: cover;
     }
     
@@ -322,6 +322,11 @@
         background-size: cover;
     }
 
+    .swiper-slide:nth-child(3) > .masters__img {
+        background: url(../images/borisovna_1.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
     .swiper-slide {
         flex-direction: row;
     }
@@ -391,6 +396,11 @@
     .masters__description {
         margin-left: 0;
     }
+
+    .swiper-slide:nth-child(3) > .masters__img {
+        background: url(../images/borisovna_1.jpg) no-repeat center center;
+        background-size: cover;
+    }
 }
 
 @media all and (min-width: 1367px) {
@@ -407,5 +417,10 @@
 
     .masters__description {
         margin-left: 70px;
+    }
+
+    .swiper-slide:nth-child(3) > .masters__img {
+        background: url(../images/borisovna_1.jpg) no-repeat center center;
+        background-size: cover;
     }
 }
