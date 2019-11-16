@@ -58,6 +58,7 @@
     height: 100vh;
     transition: 0.2s;
     z-index: 20;
+    width: 400px;
 }
 
 .header__sidebar__nav {
@@ -114,6 +115,51 @@
     padding-bottom: 350px;
 }
 
+.lang__btn {
+    display: inline-block;
+    position: absolute;
+    left: calc(50% - 40px);
+    bottom: 50px;
+}
+
+.lang__btn:nth-of-type(2) {
+    left: calc(50%);
+}
+
+.flag--ukr {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #424242;
+    transition-duration: 0.3s;
+}
+
+.flag--ukr:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
+}
+
+
+.flag--ru {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #424242;
+    transition-duration: 0.3s;
+}
+
+.flag--ru:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
+}
+
+.visible {
+    display: block !important;
+}
+
+.hidden {
+    display: none !important;
+}
 
 @media all and (min-width: 320px) and (max-width: 768px) {
     .header__title {

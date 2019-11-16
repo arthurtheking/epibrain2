@@ -248,6 +248,10 @@
         height: 100%;    
         padding-top: 0;
     }
+
+    .services--bottom > .swiper-container > .swiper-button-prev, .services--bottom > .swiper-container > .swiper-button-next {
+        top: 50%;
+    }
 }
 
 @media all and (min-width: 993px) and (max-width: 1100px) {
@@ -259,5 +263,15 @@
 
     .services__img__info {
         width: 50%;    
+    }
+
+    .services--bottom > .swiper-container > .swiper-button-prev, .services--bottom > .swiper-container > .swiper-button-next {
+        top: 50%;
+    }
+}
+
+@media all and (min-width: 1101px) {
+    .services--bottom > .swiper-container > .swiper-button-prev, .services--bottom > .swiper-container > .swiper-button-next {
+        top: 50%;
     }
 }
