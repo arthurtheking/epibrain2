@@ -35,7 +35,7 @@ module.exports = ({ mode = 'production' }) =>
             test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
             use: [
               {
-                loader: 'file-loader',
+                loader: 'file-loader?name=/public/images/[name].[ext]',
                 options: {
                   name: '[name].[ext]',
                   outputPath: 'fonts/'
