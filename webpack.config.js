@@ -3,6 +3,8 @@ const webpackMerge = require('webpack-merge');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const WebpackBar = require('webpackbar');
+// const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+
 
 const modeConfig = env => require(`./build-utils/webpack.${env}`)(env);
 
@@ -35,7 +37,7 @@ module.exports = ({ mode = 'production' }) =>
             test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
             use: [
               {
-                loader: 'file-loader?name=/public/images/[name].[ext]',
+                loader: 'file-loader',
                 options: {
                   name: '[name].[ext]',
                   outputPath: 'fonts/'
@@ -60,7 +62,7 @@ module.exports = ({ mode = 'production' }) =>
       plugins: [
         new CleanWebpackPlugin('dist'),
         new FriendlyErrorsWebpackPlugin(),
-        new WebpackBar()
+        new WebpackBar(),
       ]
     },
     modeConfig(mode)
