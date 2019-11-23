@@ -43,7 +43,7 @@ const langChangeToRus = e => {
   if(e.target.classList.value === 'flag--ru') {
 
       refs.headerBottom.innerHTML = '';
-      refs.headerBottom.insertAdjacentHTML('afterbegin', ` <h2 class="header__title">EpiBrain</h2>
+      refs.headerBottom.insertAdjacentHTML('afterbegin', `<img class="purp_logo" src="./images/logo.png" alt="Epibrain logo"> 
       <h1 class="header__welcome__message">Добро пожаловать<br> на сайт медицинского центра<br>EpiBrain</h1>`);
 
       refs.list.innerHTML = '';
@@ -76,10 +76,11 @@ const langChangeToRus = e => {
     refs.thirdMaster.innerHTML = '';
     refs.thirdMaster.insertAdjacentHTML('afterbegin', `<p class="masters__subtitle">Врач высшей категории <br> Рейнгардт Ольга Борисовна</p>
     <ul class="masters__list">
+        <li class="masters__list__item">Врач-психиатр, эпилептолог</li>
         <li class="masters__list__item">Врач функциональной диагностики</li>
         <li class="masters__list__item">Стаж работы в психиатрии - 20 лет</li>
     </ul>
-    <p class="masters__description">В 1997  году окончила Национальный медицинский университет имени О. О. Богомольца по специальности лечебное дело.</p>`)
+    <p class="masters__description">В 1998  году окончила Национальный медицинский университет имени О. О. Богомольца по специальности лечебное дело.</p>`)
     
     refs.forthMaster.innerHTML = '';
       refs.forthMaster.insertAdjacentHTML('afterbegin', `<p class="masters__subtitle">Врач-психолог <br> Лиссова-Лупаренко Анна Алексеевна </p>
@@ -213,7 +214,7 @@ const langChangeToUkr = e => {
   if(e.target.classList.value === 'flag--ukr') {
 
       refs.headerBottom.innerHTML = '';
-      refs.headerBottom.insertAdjacentHTML('afterbegin', ` <h2 class="header__title">EpiBrain</h2>
+      refs.headerBottom.insertAdjacentHTML('afterbegin', `<img class="purp_logo" src="./images/logo.png" alt="Epibrain logo">
       <h1 class="header__welcome__message">Ласкаво просимо<br> на сайт медичного центру<br>EpiBrain</h1>`);
 
       refs.list.innerHTML = '';
@@ -246,10 +247,11 @@ const langChangeToUkr = e => {
       refs.thirdMaster.innerHTML = '';
           refs.thirdMaster.insertAdjacentHTML('afterbegin', `<p class="masters__subtitle">Лікар вищої       категорії<br>Рейнгардт Ольга Борисівна</p>
           <ul class="masters__list">
+              <li class="masters__list__item">Лікар-психіатр, епілептолог</li>
               <li class="masters__list__item">Лікар функціональної діагностики</li>
               <li class="masters__list__item">Досвід роботи в психіатрії - 20 років</li>
           </ul>
-          <p class="masters__description">У 1997 році закінчила Національний медичний університет імені       О. О. Богомольця за спеціальністю лікувальна справа.</p>`)
+          <p class="masters__description">У 1998 році закінчила Національний медичний університет імені       О. О. Богомольця за спеціальністю лікувальна справа.</p>`)
 
       refs.forthMaster.innerHTML = '';
       refs.forthMaster.insertAdjacentHTML('afterbegin', `<p class="masters__subtitle">Лікар-психолог<br>Ліссова-Лупаренко Анна Олексіївна</p>
